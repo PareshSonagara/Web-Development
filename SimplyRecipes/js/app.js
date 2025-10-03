@@ -18,3 +18,9 @@ const date = getElement('#date')
 const currentYear = new Date().getFullYear()
 date.textContent = currentYear
 
+const x = getElement('.submit-btn')
+x.addEventListener('click', (e) => {
+  e.preventDefault()
+  console.log('You clicked me')
+  alert('Thanks for subscribing!')
+})
